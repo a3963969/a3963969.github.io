@@ -1,0 +1,12 @@
+  <!DOCTYPE html>
+  <html>
+  <body>
+    <h1>授权成功</h1>
+    <div id="code"></div>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const code = params.get('code');
+      document.getElementById('code').innerText = '授权码: ' + code;
+    </script>
+  </body>
+  </html>
